@@ -18,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(activityMainBinding.getRoot());
     }
     public void button1 (View view){
-        activityMainBinding.button3.setText("하잉");
+        activityMainBinding.button4.setText("하잉");
     }
 }
