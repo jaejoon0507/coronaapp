@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7"
+        android:layout_weight="5"
         tools:context=".MainActivity"
         android:orientation="horizontal">
 
@@ -24,7 +24,7 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="133dp"
                 android:layout_weight="1"
                 android:text="TextView" />
 
@@ -66,6 +66,7 @@
         android:layout_marginLeft="8dp"
         android:gravity="bottom">
 
+
         <Button
 
             android:id="@+id/button4"
@@ -96,29 +97,130 @@
 
     </LinearLayout>
 
+    <!-- 지역선택 버튼 레이아웃 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
         android:layout_weight="7"
         android:gravity="bottom"
-        android:layout_marginBottom="25dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:text="오늘확진자 "
-            android:layout_weight="1.5"
-            android:layout_height="match_parent"/>
-
-        <Button
             android:layout_height="match_parent"
+            android:layout_weight="11"
+            android:text="오늘확진자 " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="날짜 " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!-- 전체 확진자 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="전체확진자"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=" "
+                        android:gravity="center"/>
+
+                </LinearLayout>
+                <!--  전국확진자 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="전국 확진자 "
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="   "
+                        android:gravity="center"/>
+                </LinearLayout>
+                <!-- 해외 유입자 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="해외 유입자 "
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=" "
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:text="     전국확진자 "
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="          --명" />
+        </LinearLayout>
+
+        <!-- 지역 선택 버튼// 목록 선택 박스 + 위치 조절 -->
+        <Button
             android:id="@+id/button6"
             android:layout_width="120dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="4dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="0dp"
-            android:layout_weight="5"
+            android:layout_weight="9"
             android:text="지역선택"
             android:textColor="#000000"
             android:textSize="18sp"
@@ -127,4 +229,5 @@
 
 
     </LinearLayout>
+
 </LinearLayout>
