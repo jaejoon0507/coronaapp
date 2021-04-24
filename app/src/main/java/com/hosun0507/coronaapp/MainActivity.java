@@ -17,7 +17,11 @@ public class MainActivity extends AppCompatActivity {
         activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(activityMainBinding.getRoot());
     }
+    char a = '\n';
     public void button1 (View view){
-        activityMainBinding.button4.setText("하잉");
+
+        activityMainBinding.textView.setText("하이");
+        activityMainBinding.textView.append(""+a);
+        activityMainBinding.textView.append("하이");
     }
 }

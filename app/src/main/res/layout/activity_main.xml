@@ -12,124 +12,154 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="5"
+        android:layout_weight="6.5"
         tools:context=".MainActivity"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1.25"
-                android:text="2.5단계 지역 \n "  />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1.25"
-                android:text="1단계지역 \n" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="right">
+            android:layout_weight="5"
+            tools:context=".MainActivity"
+            android:orientation="horizontal">
 
-            <TextView
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.25"
+                    android:text="2.5단계 지역 \n "  />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.25"
+                    android:text="2단계지역 \n" />
+
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="확지자 날짜 \n"/>
+                android:orientation="vertical"
+                android:layout_gravity="right">
 
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="right"
+                    android:text="확지자 날짜 " />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="button1"
+                    android:text="단계별 방역조치"
+                    android:textColor="#000000"
+                    android:textColorHint="#FFFFFF"
+                    android:textIsSelectable="false"
+                    android:textSize="8dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#B6ABAB"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="거리두기 현황"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="bottom">
+
+
+            <Button
+
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="2"
+                android:onClick="button1"
+                android:text="확진환자이동경로"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#B6ABAB" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="2"
+                android:text="오늘 확진자"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#B6ABAB" />
 
         </LinearLayout>
-
 
 </LinearLayout>
 
 
 
     <!-- 확진자 버튼 레이아웃 -->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="2.3"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="bottom">
 
-
-        <Button
-
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
-            android:layout_weight="1"
-            android:onClick="button1"
-            android:text="확진환자이동경로"
-            android:textColor="#000000"
-            android:textColorHint="#FFFFFF"
-            android:textIsSelectable="false"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:backgroundTint="#B6ABAB" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="오늘 확진자"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:backgroundTint="#B6ABAB"
-            android:layout_marginLeft="4dp"/>
-
-    </LinearLayout>
 
     <!-- 지역선택 버튼 레이아웃 -->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
-        android:layout_weight="7"
+        android:layout_weight="3.5"
         android:gravity="bottom"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="11"
-            android:text="오늘확진자 " />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="날짜 " />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="horizontal">
                 <!-- 전체 확진자 -->
@@ -197,42 +227,39 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.8"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
                 android:orientation="vertical">
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1.2"
                 android:text="     전국확진자 "
                 />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="          --명" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="0.0001"
+                android:text="지역선택"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#B6ABAB" />
+
+
+        </LinearLayout>
         </LinearLayout>
 
 
 
-    </LinearLayout>
-
     <!-- 지역 선택 버튼// 목록 선택 박스 + 위치 조절 -->
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp"
-        android:layout_weight="1"
-        android:text="지역선택"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:backgroundTint="#B6ABAB" />
 
 </LinearLayout>
